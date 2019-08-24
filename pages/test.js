@@ -1,7 +1,9 @@
+import Layout from '../components/MyLayout';
+
 export default () => {
     return (
-        <div>
+        <Layout>
             <p>Test page</p>
-        </div>
+        </Layout>
     )
 };
