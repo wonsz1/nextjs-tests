@@ -28,7 +28,7 @@ const PostLink = props => (
 
 const DynamicPostLink = props => (
     <li>
-        <Link href="/p/[id]" as={`/p/${props.id}`}>
+        <Link href="/s/[id]" as={`/s/${props.id}`}>
             <a>{props.id}</a>
         </Link>
         <style jsx>{`
