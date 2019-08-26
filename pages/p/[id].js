@@ -8,8 +8,8 @@ const Mission = props => {
             <p>{props.mission.description}</p>
             <p>Payload:</p>
             <p>
-            {props.mission.payload_ids.map((item,inedx) => (
-                <li>{item}</li>
+            {props.mission.payload_ids.map((item,index) => (
+                <li key={index}>{item}</li>
             ))}
             </p>
 

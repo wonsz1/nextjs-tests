@@ -9,8 +9,8 @@ export default () => (
         <Link href="/">
             <a title="This is Home page" style={linkStyle}>Home</a>
         </Link>
-        <Link href="/about">
-            <a style={linkStyle}>About</a>
+        <Link href="/type-script">
+            <a style={linkStyle}>TypeScript</a>
         </Link>
         <Link href="/spacex">
             <a style={linkStyle}>SpaceX</a>

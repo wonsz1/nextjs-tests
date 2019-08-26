@@ -7,15 +7,25 @@
     "dev": "next",
     "build": "next build",
     "start": "next start -p $PORT",
+    "analyze": "cross-env BUNDLE_ANALYZE=both next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ja1",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^5.2.0",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.0.4",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-markdown": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "typescript": "^3.5.3"
   }
 }
