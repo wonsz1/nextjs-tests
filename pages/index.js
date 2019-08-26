@@ -6,6 +6,23 @@ const PostLink = props => (
         <Link href={`/post?title=${props.title}`}>
             <a>{props.title}</a>
         </Link>
+
+        <style jsx>{`
+        li {
+            list-style: none;
+            margin: 5px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: green;
+            font-family: 'Arial';
+        }
+
+        a:hover {
+            opacity: 0.6;
+        }
+        `}</style>
     </li>
 )
 
@@ -14,6 +31,22 @@ const DynamicPostLink = props => (
         <Link href="/p/[id]" as={`/p/${props.id}`}>
             <a>{props.id}</a>
         </Link>
+        <style jsx>{`
+        li {
+            list-style: none;
+            margin: 5px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+            font-family: 'Arial';
+        }
+
+        a:hover {
+            opacity: 0.6;
+        }
+        `}</style>
     </li>
 )
 
@@ -32,6 +65,31 @@ const Index = () => (
             <DynamicPostLink id="learn-nextjs" />
             <DynamicPostLink id="deploy-nextjs" />
         </ul>
+
+
+        <style jsx global>{`
+                h1,
+                a {
+                font-family: 'Arial';
+                }
+
+                ul {
+                padding: 0;
+                }
+
+                li {
+                margin: 0 5px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: red;
+                }
+
+                a:hover {
+                opacity: 0.6;
+                }
+            `}</style>
     </Layout>
 );
 
