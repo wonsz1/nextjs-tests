@@ -18,5 +18,8 @@ export default () => (
         <Link href="/test2">
             <a style={linkStyle}>Test2</a>
         </Link>
+        <Link href="/react-tutorial">
+          <a style={linkStyle}>React tutorial</a>
+        </Link>
     </div>
 );

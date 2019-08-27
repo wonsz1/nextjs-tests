@@ -24,7 +24,7 @@ const PostLink = props => (
         }
         `}</style>
     </li>
-)
+);
 
 const DynamicPostLink = props => (
     <li>
@@ -48,7 +48,7 @@ const DynamicPostLink = props => (
         }
         `}</style>
     </li>
-)
+);
 
 
 const Index = () => (
