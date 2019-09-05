@@ -15,8 +15,8 @@ export default () => (
         <Link href="/spacex">
             <a style={linkStyle}>SpaceX</a>
         </Link>
-        <Link href="/test2">
-            <a style={linkStyle}>Test2</a>
+        <Link href="/game">
+            <a style={linkStyle}>Game</a>
         </Link>
         <Link href="/react-tutorial">
           <a style={linkStyle}>React tutorial</a>
