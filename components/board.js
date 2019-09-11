@@ -11,23 +11,21 @@ class Board extends React.Component {
       }
 
     render() {
+        let squareBoard = [];
+        let col = [];
+        
+        for(let i=1; i<10; i++) {
+            col.push(this.renderSquare(i-1));
+            
+            if(i%3 == 0) {
+                squareBoard.push(<div key={i} className="board-row">{col}</div>);
+                col = [];
+            }
+        }
+
         return (
             <div>
-                <div className="board-row">
-                    {this.renderSquare(0)}
-                    {this.renderSquare(1)}
-                    {this.renderSquare(2)}
-                </div>
-                <div className="board-row">
-                    {this.renderSquare(3)}
-                    {this.renderSquare(4)}
-                    {this.renderSquare(5)}
-                </div>
-                <div className="board-row">
-                    {this.renderSquare(6)}
-                    {this.renderSquare(7)}
-                    {this.renderSquare(8)}
-                </div>
+                {squareBoard}
 
                 <style jsx global>{`
                     .board-row button {
