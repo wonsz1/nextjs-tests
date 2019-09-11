@@ -30,7 +30,7 @@ class Board extends React.Component {
                 </div>
 
                 <style jsx global>{`
-                    button {
+                    .board-row button {
                         padding: 5px 10px;
                         width: 50px;
                         height: 50px;
