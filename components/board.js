@@ -13,7 +13,7 @@ class Board extends React.Component {
     render() {
         let squareBoard = [];
         let col = [];
-        
+
         for(let i=1; i<10; i++) {
             col.push(this.renderSquare(i-1));
             
@@ -43,6 +43,14 @@ class Board extends React.Component {
                     }
                     .xClass {
                         color: green;
+                    }
+                    .status {
+                        padding: 5px;
+                        background: #a5a4a1;
+                        color: #fff;
+                        width: 140px;
+                        margin: 5px 0;
+                        text-align: center;
                     }
                 `}</style>
             </div>

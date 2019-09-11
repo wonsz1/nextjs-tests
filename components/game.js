@@ -58,6 +58,10 @@ class Game extends React.Component {
         })
 
         let status = `Next player: ${this.state.xIsNext ? 'X': 'O'}`;
+
+        if(current.filter(Boolean).length == 9) {
+            status = `-----> Nobody wins this time! <-------`; 
+        }
         if(winner) {
             status = `-----> And the winner is... ${winner} <-------`; 
         }
@@ -72,7 +76,7 @@ class Game extends React.Component {
                 />
                 </div>
                 <div className="game-info">
-                    <div>{status}</div>
+                    <div className="status">{status}</div>
                     <ol>{moves}</ol>
                 </div>
             </div>
